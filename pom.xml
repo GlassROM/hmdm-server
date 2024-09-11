@@ -47,7 +47,7 @@
         <java.rest.webservice>2.0.1</java.rest.webservice>
         <jackson.version>1.9.13</jackson.version>
 
-        <guice.version>4.2.2</guice.version>
+        <guice.version>4.2.3</guice.version>
 
         <servlet-api.version>2.5</servlet-api.version>
 
