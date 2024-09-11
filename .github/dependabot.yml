@@ -1,11 +1,121 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
-  - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # Maven Dependency updates for root module
+  - package-ecosystem: "maven"
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for common module
+  - package-ecosystem: "maven"
+    directory: "/common"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for jwt module
+  - package-ecosystem: "maven"
+    directory: "/jwt"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for notification module
+  - package-ecosystem: "maven"
+    directory: "/notification"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins module
+  - package-ecosystem: "maven"
+    directory: "/plugins"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for server module
+  - package-ecosystem: "maven"
+    directory: "/server"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/push module
+  - package-ecosystem: "maven"
+    directory: "/plugins/push"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/xtra module
+  - package-ecosystem: "maven"
+    directory: "/plugins/xtra"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/audit module
+  - package-ecosystem: "maven"
+    directory: "/plugins/audit"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/platform module
+  - package-ecosystem: "maven"
+    directory: "/plugins/platform"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/devicelog module
+  - package-ecosystem: "maven"
+    directory: "/plugins/devicelog"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/deviceinfo module
+  - package-ecosystem: "maven"
+    directory: "/plugins/deviceinfo"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/devicelog/core module
+  - package-ecosystem: "maven"
+    directory: "/plugins/devicelog/core"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # Maven Dependency updates for plugins/devicelog/postgres module
+  - package-ecosystem: "maven"
+    directory: "/plugins/devicelog/postgres"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
+
+  # NPM (Node.js) Dependency updates for npm in server/webtarget
+  - package-ecosystem: "npm"
+    directory: "/server/webtarget"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 50
+    rebase-strategy: "auto"
