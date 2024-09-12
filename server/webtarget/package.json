@@ -10,7 +10,7 @@
     "grunt-contrib-copy": "~1.0.0"
   },
   "dependencies": {
-    "leaflet.gridlayer.googlemutant": "~0.8.0"
+    "leaflet.gridlayer.googlemutant": "~0.14.1"
   },
   "resolutions": {
     "deep-extend": "0.5.1",
