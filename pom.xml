@@ -44,7 +44,7 @@
     <properties>
         <java.version>1.8</java.version>
         <javax.mail>1.5.0-b01</javax.mail>
-        <java.rest.webservice>2.0.1</java.rest.webservice>
+        <java.rest.webservice>2.1.1</java.rest.webservice>
         <jackson.version>1.9.13</jackson.version>
 
         <guice.version>4.2.2</guice.version>
